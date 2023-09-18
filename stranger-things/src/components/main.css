@@ -1,0 +1,585 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+h1, h2, h3, p, ul, li,
+.login-container label {
+  color: rgb(253, 251, 251);
+}
+
+/* Login Form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #f00;
+  font-family: 'Gothic', sans-serif;
+}
+
+.login {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 45px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.login p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+  text-shadow: 0 0 10px #f00;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.login input[type="text"]:hover,
+.login input[type="password"]:hover {
+  border: 1px solid #f00;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.login button {
+  background-color: #f00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.login button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+
+
+/* Registration Page */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #f00;
+  font-family: 'Gothic', sans-serif;
+}
+
+.registration {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 50px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.registration p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+  text-shadow: 0 0 10px #f00;
+}
+
+.registration label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.registration input[type="text"],
+.registration input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.registration input[type="text"]:hover,
+.registration input[type="password"]:hover {
+  border: 1px solid #f00;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.registration button {
+  background-color: #f00;
+  color: #000;
+  margin: 0px 10px 0px 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.registration button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* NavBar */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  border: 2px solid red;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar button {
+  float: right;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Posts Page */
+.posts-list {
+  background-color: #000;
+  color: #f00;
+  font-family: 'Gothic', sans-serif;
+  border: 1px solid #f00;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.posts-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+  text-shadow: 0 0 10px #f00;
+}
+
+.post-container {
+  border: 1px solid #f00;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.post-container h3 {
+  color: #f00;
+}
+
+.post-price {
+  color: #ff0;
+}
+
+.post-container p {
+  margin: 10px 0;
+}
+
+.post-container button {
+  background-color: #f00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.post-container button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.post-container input[type="text"] {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin: 10px 0;
+  background-color: #000;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.post-container input[type="text"]:hover {
+  border: 1px solid #f00;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+
+/* User Profile */
+.user-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #f00;
+  font-family: 'Gothic', sans-serif;
+}
+
+.user-styling-div {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  max-width: 800px;
+  width: 100%;
+}
+
+
+.user-styling-div h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+  text-shadow: 0 0 10px #f00;
+}
+
+.user-styling-div p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user-styling-div button {
+  background-color: #f00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.user-styling-div button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.post-form {
+  background-color: #000;
+  color: #f00;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.post-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+}
+
+.post-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.post-form input[type="text"],
+.post-form textarea,
+.post-form input[type="checkbox"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.post-form input[type="text"]:hover,
+.post-form textarea:hover,
+.post-form input[type="checkbox"]:hover {
+  border: 1px solid #f00;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.post-form button {
+  background-color: #f00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.my-post-section button {
+  margin: 5px;
+}
+
+.post-form button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.update-post-form {
+  background-color: #000;
+  color: #f00;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+
+.update-post-form h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+}
+
+.update-post-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.update-post-form input[type="text"],
+.update-post-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.update-post-form input[type="text"]:hover,
+.update-post-form textarea:hover {
+  border: 1px solid #f00;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.update-post-form button {
+  background-color: rgb(231, 230, 230);
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  margin-top: 20px;
+}
+
+.update-post-form button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Zoom Effect/Overlay */
+.update-post-form.zoomed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style for the exit button */
+.exit-zoom-button {
+  background-color: rgb(255, 0, 0);
+  color: #ff0000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.exit-zoom-button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Message Page */
+.message-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #f00;
+  font-family: 'Gothic', sans-serif;
+  border: 1px solid #f00;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.message-list {
+  background-color: #000;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.message-list h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f00;
+  text-shadow: 0 0 10px #f00;
+}
+
+.message-list p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.message-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.message-list li {
+  border: 1px solid #f00;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.message-list button {
+  background-color: #f00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.message-list button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* Text input for updating messages */
+.message-list input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  color: #f00;
+  border: 1px solid #f00;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.message-list input[type="text"]:hover {
+  border: 1px solid #f00;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.message-list button.update-button {
+  background-color: #f00;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.message-list button.update-button:hover {
+  background-color: #900;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+/* loading overlay */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid red;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
