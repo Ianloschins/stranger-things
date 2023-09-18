@@ -22,7 +22,7 @@ export const loginUser = async (formData, setIsLoading, navigate) => {
     if (result.success && result.data.token) {
       localStorage.setItem('token', result.data.token);
       setIsLoading(false);
-      navigate('/posts');
+      navigate('/');
     } else {
       console.error('Login failed.');
       setIsLoading(false);
